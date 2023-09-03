@@ -1,5 +1,7 @@
 name: Test CI
 
+run-name: ${{ github.actor }} trigger the test run
+
 on: [push, pull_request]
 
 jobs:
