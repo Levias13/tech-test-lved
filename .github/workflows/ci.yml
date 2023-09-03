@@ -1,6 +1,6 @@
 name: Test CI
 
-run-name: ${{ github.triggering_actor }} - ${{ github.ref }}
+run-name: ${{ github.triggering_actor }} - ${{ github.event.head_commit.message }}
 
 on: [push, pull_request]
 
