@@ -2,7 +2,11 @@ name: Test CI
 
 run-name: ${{ github.triggering_actor }} - ${{ github.event.head_commit.message }}
 
-on: [push, pull_request]
+on:
+    pull_request:
+        branches:
+            - develop
+            - main
 
 jobs:
   ci:
@@ -13,12 +17,18 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '20'
+          
       - name: Install dependencies
         run: npm install
+
       - name: Run test
         run: npm run test
+
       - name: Upload coverage report
         uses: actions/upload-artifact@v3
         with:
           name: coverage
           path: ./coverage
+
+      - name: Code coverage report
+        uses: ArtiomTr/jest-coverage-report-action@v2
