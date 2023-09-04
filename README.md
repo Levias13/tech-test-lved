@@ -29,16 +29,24 @@ npm run test
 
 ### Cypress test scripts
 
-Run cypress test scripts in headless mode with default browser (Electron)
+Run cypress test scripts in headed or headless mode with default browser (Electron)
 
 ```bash
 npm run cy:headless
 ```
 
-Run cypress test scripts in headless mode with chrome browser
+```bash
+npm run cy:headed
+```
+
+Run cypress test scripts in headed or headless mode with chrome browser
 
 ```bash
 npm run cy:headless:chrome
+```
+
+```bash
+npm run cy:headed:chrome
 ```
 
 Open cypress interactive mode
