@@ -46,3 +46,15 @@ Open cypress interactive mode
 ```bash
 npm run cy
 ```
+
+## Docs
+
+Test Case document and KPI Analysis can be found on:
+
+```bash
+cd tech-test-lved/docs
+```
+
+## Github Action CI
+
+On every pull request to main branch a Github Workflow Action is going to be executed to run unit test, generate code coverage report and upload artifacts.
