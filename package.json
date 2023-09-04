@@ -7,8 +7,9 @@
     "test": "npx jest --coverage",
     "cy": "cypress open",
     "cy:headless": "cypress run --headless",
+    "cy:headed": "cypress run --headed",
     "cy:headless:chrome": "cypress run --headless --browser chrome",
-    "cy:report": "cypress run --reporter reporters/custom.js"
+    "cy:headed:chrome": "cypress run --headed --browser chrome"
   },
   "keywords": [],
   "author": "",
