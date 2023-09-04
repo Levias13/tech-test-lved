@@ -12,6 +12,8 @@ describe('SL001', () => {
             .addItemToCart(itemId)
             .goToShoppinCart()
             .verifyItemOnShoppingCart();
+
+            console.log('dummy log');
         })
    })
 });
